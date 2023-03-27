@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	font-family: sans-serif, Helvetica;
+	text-align: center;
+	font-size: 50pt;
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-column-gap: 2.5vw;
+}
+nav {
+	background-color: black;
+	grid-column-end: span 2;
+	grid-row-end: span 50;
+}
+a{
+	font-family: sans-serif, Helvetica;
+	font-size: 2.75vw;
+	font-weight: bold;
+	padding: 6px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: darkgray;
+}
+a:visited{
+	color:white;
+}
+
+.texts {
+	grid-column-start: 4;
+	grid-column-end: span 4;
+}
+p{
+	font-family: sans-serif, Helvetica;
+	font-weight: bold;
+	font-size: 20pt;
+}
+p + p {
+	margin-top: -10px;
+}
+.interactive {
+	color: white;
+}
+.interactive:hover{
+	background-color: black;
+}
